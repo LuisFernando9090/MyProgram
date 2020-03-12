@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Sistema Escolar</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="CadastroDocente.css" media="screen" />
+    </head>
+    <body>
+        <div class="Log">
+            <a href="TelaOpcoes.html"><h3>Direção Workstation</h3></a>
+        </div>
+        <div class="VoltarDir">
+            <a href="Docente.html"><h3>Docente</h3></a>
+        </div>
+        <div class="Alterar">
+            <h3>Cadastro Docente</h3>
+        </div>
+        <div class="Nome">
+            <form action="/action_page.php">
+                <label for="uname">Nome &nbsp</label>
+                <input type="text" placeholder="Digite seu Nome" name="Usuario">
+            </form>
+        </div>
+        <div class="Cpf ">
+            <form action="/action_page.php">
+                <label for="uname">CPF  &nbsp &nbsp</label>
+                <input type="text" placeholder="Digite seu CPF" name="Cpf">
+            </form>
+        </div>
+        <div class="Cmp">
+            <form action="/action_page.php">
+                <label for="birthday">Data de Nascimento </label>
+                <input type="date" id="birthday" name="birthday">
+            </form>
+        </div>
+        <div class="Cmp2">
+            <form action="/action_page.php">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </form>
+        </div>
+        <div class="Criar">   
+            <button type="submit"><a href="Docente.html">Criar Usuário</a></button>
+        </div>
+        <div class="GerarSenha">   
+            <button type="submit" onclick="GerarLetras()"><a href="#">Gerar Senha</a></button>
+            <h3 class="GSenha" id="Senha"></h3>
+        </div>
+        <script>
+            function GerarNumeros() {
+                var NumeroRandom = Math.random().toString();
+                var lengthNumeros = NumeroRandom.length;
+                var Numeros = NumeroRandom.substring(lengthNumeros, lengthNumeros - 4);
+                return Numeros;
+            }
+            function GerarLetras() {
+                var nomes = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
+                var name = +GerarNumeros() + nomes[Math.ceil(Math.random() * (nomes.length - 1))].toLocaleUpperCase()
+                        + GerarNumeros() + nomes[Math.ceil(Math.random() * (nomes.length - 1))].toLocaleUpperCase()
+                        + nomes[Math.ceil(Math.random() * (nomes.length - 1))].toLocaleUpperCase();
+                document.getElementById("Senha").innerHTML = name;
+            }
+        </script>
+    </body>
+</html>

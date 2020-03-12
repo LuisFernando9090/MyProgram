@@ -1,0 +1,124 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9 de mar de 2020, 13:27:50
+    Author     : TioSa
+*/
+body{
+    background-image: url("Fundo.jpeg");
+    background-size: 1366px 768px;
+}
+div.Log{
+    position: relative;
+    text-align: center;
+    font-size: 35px;
+}
+div.Alterar{
+    position: relative;
+    text-align: center;
+    top: 10px;
+    font-size: 25px;
+}
+div.Nome{
+    position: relative;
+    text-align: center;
+    top: 10px;
+    font-size: 20px;
+}
+div.Cpf{
+    text-align: center;
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+    right: -1px;
+}
+input[type=text], input[type=text], input[type=date], input[type=email] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 20px;    
+}
+div.Cmp{
+    position: relative;
+    text-align: center;
+    top: 30px;
+    font-size: 20px;
+    right: 51px;
+}
+div.Cmp2{
+    position: relative;
+    text-align: center;
+    top: 40px;
+    font-size: 20px;
+    right: -5px;
+}
+button{
+    padding: 10px 20px;
+    width: 20%;
+    font-size: 20px;
+    background-color: #777;
+}
+.collapsible {
+  background-color: #777;
+  color: blue;
+  cursor: pointer;
+  padding: 12px 20px;
+  width: 20%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  position: relative;
+  top: 50px;
+  left: 550px;
+}
+.active, .collapsible:hover {
+  background-color: #555;
+}
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2212";
+}
+div.content {
+  position: relative;
+  top: 50px;
+  padding: 0 150px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  font-size: 20px;
+}
+div.Cmp4{
+    position: relative;
+    left: 9px;
+}
+div.Cmp5{
+    position: relative;
+    text-align: center;
+    left: 170px;
+    bottom: 100px;
+}
+div.AlteraEVolta{
+    position: relative;
+    text-align: right;
+    right: 529px;
+    top: 60px;
+}
+a:link {text-decoration: none;color: #000099}
+a:active {text-decoration: none;}
+a:visited {text-decoration: none;color: #000099}
+a:hover {text-decoration: underline;color: #000099}

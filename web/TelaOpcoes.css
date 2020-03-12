@@ -1,0 +1,76 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8 de mar de 2020, 17:44:05
+    Author     : TioSa
+*/
+div.Log{
+    position: relative;
+    text-align: center;
+    font-size: 35px;
+}
+body{
+    background-image: url("Fundo.jpeg");
+    background-size: 1366px 768px;
+    
+}
+div.Img{
+    position: relative;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+div.Menu{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 110px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+div.Menu a{
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block;
+}
+button{
+    padding: 10px 20px;
+    width: 20%;
+    font-size: 20px;
+    background-color: #777;
+}
+div.Global{
+    text-align: center;
+    position: relative;
+}
+div.Direcao{
+    position: relative;
+    top: 30px;
+}
+div.Docente{
+    position: relative;
+    top: 40px;
+}
+div.Aluno{
+    position: relative;
+    top: 50px;
+}
+div.Disciplina{
+    position: relative;
+    top: 60px;
+}
+div.Turma{
+    position: relative;
+    top: 70px;
+}
+a:link {text-decoration: none;color: #000099}
+a:active {text-decoration: none;}
+a:visited {text-decoration: none;color: #000099}
+a:hover {text-decoration: underline;color: #000099}
+
+div.Menu a:hover {background-color: #B3DCFF;}
+
+div.Img:hover div.Menu {display: block;}
